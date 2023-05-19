@@ -1,0 +1,34 @@
+my-snowflake-db:
+  outputs:
+    dev:
+      account: urvucgj-wj99972
+      client_session_keep_alive: false
+      connect_retries: 0
+      connect_timeout: 10
+      database: DBT
+      password: Sprite@123
+      query_tag:
+      - anything
+      retry_all: false
+      retry_on_database_errors: false
+      reuse_connections: false
+      role: ACCOUNTADMIN
+      schema: DW
+      threads: 1
+      type: snowflake
+      user: DBTSUYOG
+      warehouse: COMPUTE_WH
+  target: dev
+python_demo:
+  outputs:
+    dev:
+      account: urvucgj-wj99972
+      database: DBT
+      password: Sprite@123
+      role: ACCOUNTADMIN
+      schema: DW
+      threads: 1
+      type: snowflake
+      user: DBTSUYOG
+      warehouse: COMPUTE_WH
+  target: dev
