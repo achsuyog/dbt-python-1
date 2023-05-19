@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: customer_data
+    database: dbt
+    schema: dw_lnd
+    tables:
+      - name: customer
+  - name: store_data
+    database: dbt
+    schema: dw_lnd
+    tables:
+      - name: store_dbt
+  - name: sales_data
+    database: dbt
+    schema: dw_lnd
+    tables:
+      - name: sales
+  - name: product_data
+    database: dbt
+    schema: dw_lnd
+    tables:
+      - name: product
+  - name: soh_data
+    database: dbt
+    schema: dw_lnd
+    tables:
+      - name: soh

@@ -1,0 +1,50 @@
+[0m17:32:48.641018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAA5541670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAA74F2880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAA74F28E0>]}
+
+
+============================== 17:32:48.646431 | 56dde09c-b3ca-475b-9485-a5fb3e2292fb ==============================
+[0m17:32:48.646431 [info ] [MainThread]: Running with dbt=1.5.0
+[0m17:32:48.648249 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\suyog.acharya\\PycharmProjects\\dbt_python_1\\python_demo\\dbt_logs', 'profiles_dir': 'C:\\Users\\suyog.acharya\\PycharmProjects\\dbt_python_1\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m17:32:51.618197 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m17:32:51.621343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '56dde09c-b3ca-475b-9485-a5fb3e2292fb', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB6E5AA90>]}
+[0m17:32:51.646304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '56dde09c-b3ca-475b-9485-a5fb3e2292fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAA7540850>]}
+[0m17:32:51.673298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '56dde09c-b3ca-475b-9485-a5fb3e2292fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB6E74D60>]}
+[0m17:32:51.698102 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m17:32:51.739450 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:32:51.741486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '56dde09c-b3ca-475b-9485-a5fb3e2292fb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB6E83640>]}
+[0m17:32:53.610003 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m17:32:53.626581 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m17:32:53.666400 [error] [MainThread]: Encountered an error:
+Parsing Error in model tgt_sales (models\target\tgt_sales.py)
+  In current version, model function should return only one dataframe object
+[0m17:32:53.669420 [debug] [MainThread]: Command `dbt run` failed at 17:32:53.668415 after 5.06 seconds
+[0m17:32:53.670402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAA5541670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB701A640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB701A610>]}
+[0m17:32:53.671398 [debug] [MainThread]: Flushing usage events
+[0m09:38:34.852115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026085686670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026087632970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000260876322E0>]}
+
+
+============================== 09:38:34.858145 | cf95edd9-15dd-4b98-8f3c-4afbcd4992f4 ==============================
+[0m09:38:34.858145 [info ] [MainThread]: Running with dbt=1.5.0
+[0m09:38:34.860089 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\suyog.acharya\\PycharmProjects\\dbt_python_1\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\suyog.acharya\\PycharmProjects\\dbt_python_1\\python_demo\\dbt_logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m09:38:38.904461 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH
+env var instead.
+[0m09:38:38.906462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'cf95edd9-15dd-4b98-8f3c-4afbcd4992f4', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026096F9BA90>]}
+[0m09:38:38.936467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cf95edd9-15dd-4b98-8f3c-4afbcd4992f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026087681850>]}
+[0m09:38:38.958504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cf95edd9-15dd-4b98-8f3c-4afbcd4992f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026096FB5D60>]}
+[0m09:38:38.986936 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m09:38:39.024655 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m09:38:39.025766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'cf95edd9-15dd-4b98-8f3c-4afbcd4992f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026096FC75E0>]}
+[0m09:38:40.979638 [debug] [MainThread]: 1699: static parser successfully parsed example\my_first_dbt_model.sql
+[0m09:38:40.995605 [debug] [MainThread]: 1699: static parser successfully parsed example\my_second_dbt_model.sql
+[0m09:38:41.037599 [error] [MainThread]: Encountered an error:
+Parsing Error in model tgt_sales (models\target\tgt_sales.py)
+  In current version, model function should return only one dataframe object
+[0m09:38:41.039551 [debug] [MainThread]: Command `dbt run` failed at 09:38:41.038552 after 6.22 seconds
+[0m09:38:41.040552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026085686670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002609715E640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002609715E610>]}
+[0m09:38:41.041551 [debug] [MainThread]: Flushing usage events
